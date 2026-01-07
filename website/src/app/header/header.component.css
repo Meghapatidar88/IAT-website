@@ -1,0 +1,65 @@
+.header {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* LEFT */
+.left {
+  
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.location {
+  font-size: 14px;
+}
+
+/* CENTER */
+.center {
+    flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.company {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* RIGHT */
+.right a{
+    text-decoration: none;
+    color: inherit;
+}
+.right {
+    flex: 1;
+ display: flex;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.search {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* ICON */
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+

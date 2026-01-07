@@ -1,0 +1,17 @@
+<swiper-container
+  autoplay="true"
+  autoplay-delay="6000"
+  loop="true"
+  slides-per-view="1"
+  class="home-swiper"
+>
+  <swiper-slide *ngFor="let slide of slides">
+    <img [src]="slide.image" alt="slide" />
+    
+    <div class="content">
+      <h2>{{ slide.title }}</h2>
+        <h3>{{ slide.subtitle }}</h3>
+        <p>{{ slide.description }}</p>
+    </div>
+  </swiper-slide>
+</swiper-container>
