@@ -1,0 +1,14 @@
+<section class="services-section">
+  <h2>Our Services</h2>
+  <p class="subtitle">
+    We deliver innovative automation and technology solutions to help businesses grow.
+  </p>
+
+  <div class="services-grid">
+    <div class="service-card" *ngFor="let service of services">
+      <div class="icon">⚙️</div>
+      <h3>{{ service.title }}</h3>
+      <p>{{ service.description }}</p>
+    </div>
+  </div>
+</section>

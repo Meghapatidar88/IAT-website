@@ -1,10 +1,13 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HomeAboutComponent } from '../../home/home-about/home-about.component';
+import { RouterLink } from '@angular/router';
+import { HomeServicesComponent } from '../../home/home-services/home-services.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,HomeAboutComponent,HomeServicesComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
