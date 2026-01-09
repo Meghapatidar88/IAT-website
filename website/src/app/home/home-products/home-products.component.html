@@ -1,0 +1,19 @@
+<section class="product-showcase">
+  <h2 class="section-title">Our Products</h2>
+
+  <div class="product-grid">
+    <div
+      class="product-card"
+      *ngFor="let product of products"
+      (click)="open(product)"
+    >
+      <img [src]="product" alt="Product image" />
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE PREVIEW MODAL -->
+<div class="preview-overlay" *ngIf="selectedImage" (click)="close()">
+  <img [src]="selectedImage" class="preview-image" />
+</div>
+

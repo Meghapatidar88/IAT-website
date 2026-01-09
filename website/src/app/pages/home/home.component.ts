@@ -2,12 +2,12 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeAboutComponent } from '../../home/home-about/home-about.component';
 import { RouterLink } from '@angular/router';
-import { HomeServicesComponent } from '../../home/home-services/home-services.component';
+
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule,HomeAboutComponent,HomeServicesComponent],
+  imports: [CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
@@ -17,14 +17,14 @@ export class HomeComponent {
 
   slides = [
     {
-      image: '/assets/slide1-ai.jpg',
+      image: '/assets/slide1-aii.jpg',
       title: 'Innovators Automation & Technology',
     subtitle: 'Shaping the Future with Smart Innovation',
     description:
       'We deliver cutting-edge automation and AI-driven solutions that empower businesses to grow faster and smarter.'
   },
     {
-    image: '/assets/slide2-software.jpg',
+    image: '/assets/slide2-softwaree.jpg',
     title: 'Custom Software Development',
     subtitle: 'Scalable • Secure • Reliable',
     description:

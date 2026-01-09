@@ -1,0 +1,33 @@
+<section class="contact-section">
+  <h2 class="title">Contact Us</h2>
+  <p class="subtitle">Let’s build something innovative together</p>
+
+  <div class="contact-wrapper">
+
+    <!-- LEFT INFO -->
+    <div class="contact-info">
+      <h3>Innovator Automation & Technology</h3>
+      <p>We provide smart automation, software and digital solutions for modern businesses.</p>
+
+      <ul>
+        <li><strong>📍 Location:</strong> Indore, India</li>
+        <li><strong>📞 Phone:</strong> +91 98765 43210</li>
+        <li><strong>📧 Email:</strong> info &#64;innovatorautomation.com</li>
+      </ul>
+    </div>
+
+    <!-- RIGHT FORM -->
+    <form class="contact-form" (ngSubmit)="submitForm()">
+      <input type="text" placeholder="Your Name" [(ngModel)]="contact.name" name="name" required>
+
+      <input type="email" placeholder="Email Address" [(ngModel)]="contact.email" name="email" required>
+
+      <input type="tel" placeholder="Phone Number" [(ngModel)]="contact.phone" name="phone">
+
+      <textarea rows="4" placeholder="Your Message" [(ngModel)]="contact.message" name="message"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+</section>

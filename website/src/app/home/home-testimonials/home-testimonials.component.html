@@ -1,0 +1,20 @@
+<section class="testimonials">
+  <h2 class="title">Testimonials</h2>
+  <p class="subtitle">Trusted by businesses across industries</p>
+
+  <div class="testimonial-cards">
+    <div class="card" *ngFor="let t of testimonials">
+      <img [src]="t.image" alt="client" />
+
+      <h3>{{ t.name }}</h3>
+      <span>{{ t.role }} • {{ t.company }}</span>
+
+      <p class="message">“{{ t.message }}”</p>
+
+      <div class="stars">
+        <span *ngFor="let star of [].constructor(t.rating)">★</span>
+      </div>
+    </div>
+  </div>
+</section>
+
